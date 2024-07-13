@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Modern Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <input type="checkbox" id="menu-toggle">
+    <div class="sidebar">
+
+        <div class="side-content">
+            <div class="profile">
+                <div class="profile-img bg-img" style="background-image: url(img/3.jpeg)"></div>
+                <h4>David Green</h4>
+            </div>
+
+            <div class="side-menu">
+                <ul>
+                    <li>
+                        <a href="">
+                            <span class="las la-home"></span>
+                            <small>Home</small>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="las la-chart-bar"></span>
+                            <small>Report</small>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="active">
+                            <span class="las la-cog"></span>
+                            <small>Administration</small>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="las la-heart"></span>
+                            <small>Connect</small>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="las la-comments"></span>
+                            <small>Contact</small>
+                        </a>
+                    </li>
+                </ul>
+                <div class="card sidebar-card">
+                    <div class="card-content" style="text-align: left; ">
+                        <h3 style="color: #8495b3;">Subscribe to Updates</h3>
+                        <p style="color: #264782;">Get the latest news and updates directly in your inbox.</p>
+                        <button class="subscribe-btn">Subscribe</button>
+                    </div>
+                    <div class="card-footer">
+                        <img src="img/footerIcon.jfif" alt="Image" class="card-image">
+                    </div>
+                </div>
+                <span style="color: #bfcbd0;font-size: 12px; ">APP Version 2.3.4 | API Version 1.0.1.1</span>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <main>
+            <div class="page-header">
+                <div class="logo-img" style="background-image: url(img/logo1.png)"></div>
+                <small>Home / Administration / Activity</small>
+            </div>
+            <div class="container">
+                <div class="content">
+                    <span style="color: #414954;font-size: 20px;">Activites</span>
+                    <span style="color: #9d9d9c;font-size: 15px;">Track The Activity Management</span>
+                </div>
+                <div class="button-container">
+                    <button
+                        style="color: #929ab5;height: 45px;border: 1.8px solid #979ca8;border-radius: 15px;background-color: #ffffff;">View
+                        Activity</button>
+
+                    <button style="background: #17273e;color: #ced1db;height: 45px;">+ Create Activity</button>
+                </div>
+            </div>
+            <div class="page-content">
+                <div class="analytics">
+                    <div class="card">
+                        <img src="img/clockicon.jfif" class="card-image" alt="Icon image">
+
+                        <div class="card-content">
+                            <div class="card-progress">
+                                <small>TOTAL ACTIVITY</small>
+                            </div>
+                            <div class="card-head">
+                                <h2>297</h2>
+                            </div>
+                            <div class="card-footer">
+                                <span class="footer-left">
+                                    <span class="icon las la-arrow-up" style="display: contents;color: #e5183f;"></span>
+                                    <span class="value">75%</span>
+                                </span>
+                                <small class="footer-right">since last 7 days</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="img/location.png" class="card-image" alt="Icon image">
+
+                        <div class="card-content">
+                            <div class="card-progress">
+                                <small>TOTAL LOCATION</small>
+                            </div>
+                            <div class="card-head">
+                                <h2>75</h2>
+                            </div>
+                            <div class="card-footer">
+                                <span class="footer-left">
+                                    <span class="icon las la-arrow-up" style="display: contents;color: #399c86;"></span>
+                                    <span class="value" style="color: #399c86;">19%</span>
+                                </span>
+                                <small class="footer-right">since last 7 days</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="img/userIcon.png" class="card-image" alt="Icon image">
+
+                        <div class="card-content">
+                            <div class="card-progress">
+                                <small>HEADCOUNT</small>
+                            </div>
+                            <div class="card-head">
+                                <h2>4</h2>
+                            </div>
+                            <div class="card-footer">
+                                <span class="footer-left">
+                                    <span class="icon las la-arrow-up" style="display: contents;color: #399c86;"></span>
+                                    <span class="value" style="color: #399c86;">50%</span>
+                                </span>
+                                <small class="footer-right">since last 7 days</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="img/callIcon.png" class="card-image" alt="Icon image">
+
+                        <div class="card-content">
+                            <div class="card-progress">
+                                <small>ACTIVE CALLS</small>
+                            </div>
+                            <div class="card-head">
+                                <h2>786</h2>
+                            </div>
+                            <div class="card-footer">
+                                <span class="footer-left">
+                                    <span class="icon las la-arrow-up" style="display: contents;color: #e5183f;"></span>
+                                    <span class="value">0%</span>
+                                </span>
+                                <small class="footer-right">since last 7 days</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="charts">
+                    <div class="chart-container">
+                        <div class="chart-header">
+                            <span style="color: #908884;">Activity</span>
+                            <div class="custom-select">
+                                <select>
+                                    <option value="option1" data-icon="icon1.png">This Month</option>
+                                    <option value="option1" data-icon="icon1.png">Option 1</option>
+                                    <option value="option2" data-icon="icon2.png">Option 2</option>
+                                    <option value="option3" data-icon="icon3.png">Option 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <canvas id="pieChart"></canvas>
+                    </div>
+                    <div class="chart-container">
+                        <div class="chart-header">
+                            <span style="color: #908884;">Location</span>
+                            <div class="custom-select">
+                                <select>
+                                    <option value="option1" data-icon="icon1.png">This Month</option>
+                                    <option value="optionA" data-icon="iconA.png">Option A</option>
+                                    <option value="optionB" data-icon="iconB.png">Option B</option>
+                                    <option value="optionC" data-icon="iconC.png">Option C</option>
+                                </select>
+                            </div>
+                        </div>
+                        <canvas id="lineChart"></canvas>
+                    </div>
+                    <div class="chart-container">
+                        <div class="chart-header">
+                            <span style="color: #908884;">Measures</span>
+                            <div class="custom-select">
+                                <select>
+                                    <option value="option1" data-icon="icon1.png">This Month</option>
+                                    <option value="item1" data-icon="iconItem1.png">Item 1</option>
+                                    <option value="item2" data-icon="iconItem2.png">Item 2</option>
+                                    <option value="item3" data-icon="iconItem3.png">Item 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <canvas id="barChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="records table-responsive">
+                    <div style="color: #4f505c;font-weight: 600;">Activities Ening In Next 7 Days</div>
+                    <div class="record-header">
+                        <div class="add">
+                            <select name="" id="">
+                                <option value="">ID</option>
+                            </select>
+                        </div>
+
+                        <div class="browse">
+                            <input type="search" placeholder="Search" class="record-search">
+                            <span class="las la-search"></span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <table width="100%">
+                            <thead>
+                                <tr>
+                                    <th>Action</th>
+                                    <th>Activity Code</th>
+                                    <th>Activity Name</th>
+                                    <th>Measures</th>
+                                    <th>Tasks</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <span class="las la-ellipsis-v"></span>
+                                    </td>
+                                    <td>
+                                        <span>778</span>
+                                    </td>
+                                    <td>
+                                        <span>Incomplete Dependancy</span>
+                                    </td>
+                                    <td>
+                                        <span>General</span>
+                                    </td>
+                                    <td>
+                                        <span>Incomplete Dependancy</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table-footer">
+                        <div class="pagination">
+                            <div>
+                                <a href="#">&laquo;</a>
+                                <a href="#">&lt;</a>
+                                <a href="#" class="active">1</a>
+
+                                <a href="#">&gt;</a>
+                                <a href="#">&raquo;</a>
+                            </div>
+                            <span id="tableLength" class="table-length">Displaying items <span
+                                    id="rowCount">1-1</span><span>of 1</span></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="charts">
+
+                <div class="chart-container1">
+                    <div class="chart-header">
+                        <span style="color: #908884;">Category</span>
+                        <div class="custom-select">
+                            <select>
+                                <option value="option1" data-icon="icon1.png">This Month</option>
+                                <option value="option1" data-icon="icon1.png">Option 1</option>
+                                <option value="option2" data-icon="icon2.png">Option 2</option>
+                                <option value="option3" data-icon="icon3.png">Option 3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <canvas id="barChart2"></canvas>
+                </div>
+                <div class="chart-container1">
+                    <div class="chart-header">
+                        <span style="color: #908884;">Customer</span>
+                        <div class="custom-select">
+                            <select>
+                                <option value="option1" data-icon="icon1.png">This Month</option>
+                                <option value="option1" data-icon="icon1.png">Option 1</option>
+                                <option value="option2" data-icon="icon2.png">Option 2</option>
+                                <option value="option3" data-icon="icon3.png">Option 3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <canvas id="barChart1"></canvas>
+                </div>
+            </div>
+        </main>
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
